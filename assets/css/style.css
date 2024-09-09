@@ -1823,6 +1823,297 @@ body:has(.modal_open) .modal_back{
     text-align: left;
     justify-content: left;
 }
+
+
+
+
+/*  */
+.hero{
+    position: relative;
+    background: radial-gradient(213.32% 302.43% at 149.73% -58.39%, #0F5881 0%, #1EA49C 36.11%, #76CE75 66.67%, #ECF39F 91.15%);
+    overflow: hidden;
+    z-index: 1;
+}
+.hero .cont{
+    padding-top: 245px;
+    padding-bottom: 132px;
+    position: relative;
+}
+.hero_image{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -2;
+    mix-blend-mode: soft-light;
+}
+.hero_title{
+    font-size: 82px;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    color: #F4F1F0;
+    padding: 0 0 32px 0;
+}
+.hero_image_mobile,
+.home_line2{
+    display: none;
+}
+.about{
+    border-radius: 60px;
+    background: var(--creme-white);
+    box-shadow: 6px 9px 20px 0px rgba(0, 0, 0, 0.15);
+    padding: 145px 0 100px 0;
+    margin: -60px 0 0 0;
+    position: relative;
+    z-index: 2;
+}
+.section_top{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+.block_title{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    color: var(--grey-black);
+}
+.about .section_top{
+    margin: 0 0 200px 0;
+}
+.about_top_image2{
+    display: none;
+}
+.section_title2{
+    font-size: 99px;
+    font-weight: 700;
+    line-height: 110.5%;
+    text-transform: uppercase;
+    margin: 0 0 15px 0;
+    color: var(--grey-black);
+}
+.description{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: normal;
+    color: var(--grey-black);
+}
+.advantage_row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 120px 0;
+    margin: 200px 0;
+}
+.advantage_row2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 120px 30px;
+    margin: 0 0 200px 0;
+}
+.advantage_row2 .advantage_item{
+    max-width: 100%;
+    width: calc(50% - 15px);
+}
+.advantage_item{
+    position: relative;
+}
+.advantage_item:not(.for_border .advantage_item), .for_border:has(.advantage_item){
+    width: 435px;
+    max-width: calc(50% - 15px);
+}
+.advantage_title{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    color: var(--grey-black);
+    margin: 0 0 24px 0;
+    width: 85%;
+}
+.advantage_image{
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    top: -130px;
+    max-width: 234px;
+    max-height: 234px;
+}
+.advantage_item .description:not(.for_border .description){
+    width: 80%;
+}
+.advantage_image2{
+    width: 100%;
+}
+.advantage_row .advantage_item:nth-child(3) .advantage_image{
+    top: -165px;
+}
+.advantage_row .advantage_item:nth-child(3){
+    margin: 82px 0 0 0;
+}
+.about .for_border{
+    border-radius: 60px;
+    background: var(--GR1);
+    padding: 2px;
+    box-shadow: 6px 9px 20px 0px rgba(0, 0, 0, 0.15);
+}
+.about .for_border .advantage_item{
+    background-color: var(--creme-white);
+    padding: 45px 34px 45px 50px;
+    border-radius: 58px;
+}
+.protein{
+    margin: 200px 0 140px 0;
+    position: relative;
+    z-index: 0;
+}
+.protein img{
+    width: 100%;
+}
+.protein::before{
+    position: absolute;
+    content: '';
+    width: 103%;
+    height: 132%;
+    left: 0;
+    top: -7%;
+    background-image: url(../img/protein_ellipse.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+    animation: rotateAnimation 10s infinite;
+}
+@keyframes rotateAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(45deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+.protein .description{
+    position: absolute;
+    z-index: 1;
+}
+.protein .description:first-child{
+    left: 16px;
+    top: -23px;
+}
+.protein .description:nth-child(2){
+    top: -25px;
+    right: 0;
+}
+.protein .description:nth-child(3){
+    left: 0;
+    bottom: 112px;
+}
+.protein .description:nth-child(4){
+    right: 0;
+    bottom: 113px;
+}
+
+.diagram{
+    margin: 0 0 200px 0;
+}
+.diagram_texts{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 40px 0 20px 0;
+}
+.diagram_texts .description{
+    width: 33.3%;
+    text-align: left;
+}
+.diagram img{
+    width: 100%;
+}
+.etaps_row{
+    display: flex;
+    align-items: center;
+    gap: 120px;
+    justify-content: flex-start;
+    margin: 135px 0 100px 0;
+    position: relative;
+    padding-right: 252px;
+}
+.etaps_col{
+    display: flex;
+    flex-direction: column;
+    gap: 135px;
+    align-items: flex-start;
+}
+.etap_item{
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+}
+.etap_item:nth-child(2) .description{
+    max-width: 67%;
+}
+.etaps_anim{
+    max-width: 252px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+.faq_section{
+    background: radial-gradient(358.38% 263.16% at 123.55% -27.98%, #0F5881 0%, #1EA49C 36.98%, #76CE75 66.67%, #ECF39F 91.15%);
+    padding: 140px 0 160px 0;
+    margin: -70px 0 0 0;
+}
+.faq_section .section_title2{
+    color: var(--creme-white);
+    margin: 0 0 50px 0;
+}
+.faq_block {
+    background-color: var(--creme-white);
+    border-radius: 60px;
+    border: 2px solid var(--grey-black);
+}
+.faq_block .faq_item {
+    padding: 0 72px 0 49px;
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--grey-black);
+    border-bottom: 2px solid var(--grey-black);
+}
+.faq_block .faq_item:last-child{
+    border: none;
+}
+.faq_block .faq_top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 44px 0 52px 0;
+}
+.faq_block .faq_top .faq_arr_down{
+    padding: 5px;
+    transition: var(--transition);
+}
+.faq_block .faq_top .faq_arr_down.rotate{
+    transform: rotateX(180deg);
+}
+.faq_block .faq_body{
+    overflow: hidden;
+    margin: 0;
+    height: 0;
+    transition: var(--transition);
+}
+.faq_block .faq_body.open{
+    margin: 0 0 30px 0;
+    height: auto;
+}
+.desctop_none{
+    display: none;
+}
 /* MEDIA */
 @media only screen and (max-width: 1170px) {
     .footer_form .footer_form-title h2,
@@ -2131,6 +2422,59 @@ body:has(.modal_open) .modal_back{
     .account {
         padding: 0 0 80px 0;
     }
+    .section_title2 {
+        font-size: 55px;
+    }
+    .description{
+        font-size: 20px;
+    }
+    .hero_title {
+        font-size: 60px;
+        padding: 120px 0;
+    }
+    .hero .cont {
+        padding-top: 100px;
+        padding-bottom: 170px;
+    }
+    .faq_block .faq_top{
+        padding: 30px 0;
+    }
+    .about{
+        padding: 100px 0;
+    }
+    .about .section_top, .advantage_row2, .diagram {
+        margin: 0 0 100px 0;
+    }
+    .advantage_row .advantage_item:nth-child(3) {
+        margin: 74px 0 0 0;
+    }
+    .advantage_row{
+        margin: 200px 0 100px 0;
+    }
+    .protein {
+        margin: 100px 0 140px 0;
+    }
+    .etaps_row{
+        margin: 100px 0;
+    }
+    .etaps_col{
+        gap: 100px;
+    }
+    .advantage_title {
+        font-size: 28px;
+    }
+    .protein .description:nth-child(4) {
+        bottom: 98px;
+    }
+    .protein .description:nth-child(3) {
+        bottom: 98px;
+    }
+    .etaps_anim{
+        display: none;
+    }
+    .etaps_row{
+        padding-right: 0;
+    }
 }
 
 @media only screen and (max-width: 776px){
@@ -2393,6 +2737,158 @@ body:has(.modal_open) .modal_back{
     }
     .pet_inputs .w-100 .collapse_input {
         gap: 20px;
+    }
+    .section_title2 {
+        font-size: 36px;
+        margin: 0 0 20px 0;
+    }
+    .description{
+        font-size: 16px;
+    }
+
+    .header_navs select{
+        color: var(--grey-black);
+        border-color: var(--grey-black);
+        background-image: url(../img/i-arr_down_black.svg);
+    }
+    .hero_title {
+        font-size: 45px;
+    }
+    .hero_image{
+        display: none;
+    }
+    .hero_image_mobile{
+        display: block;
+        position: absolute;
+        top: 45px;
+        right: 50%;
+        transform: translate(50%,0);
+        z-index: -2;
+        mix-blend-mode: soft-light;
+    }
+    .home .home_line2, .hero .home_line2 {
+        position: absolute;
+        display: block;
+        top: 37px;
+        left: -24px;
+        width: 108%;
+        z-index: -1;
+    }
+    .about .section_top{
+        flex-direction: column;
+        gap: 0;
+        align-items: center;
+    }
+    .block_title {
+        font-size: 22px;
+    }
+    .about_top_image2{
+        display: block;
+    }
+    .about_top_image{
+        display: none;
+    }
+    .about{
+        padding: 80px 0;
+    }
+
+    /* FAQ */
+    .faq_block .faq_item{
+        padding: 0 40px 0 30px;
+        font-size: 18px;
+    }
+    .faq_section{
+        padding: 120px 0;
+    }
+    .faq_block .faq_top {
+        padding: 25px 0;
+    }
+
+    /*  */
+    .etap_right_anim{
+        display: none;
+    }
+    .advantage_row .advantage_item:not(.for_border .advantage_item){
+        width: 70%;
+        max-width: 100%;
+    }
+    .advantage_row .for_border:has(.advantage_item){
+        max-width: 100%;
+        width: 100%;
+    }
+    .advantage_image{
+        max-width: 150px;
+        max-height: 150px;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        top: -100px;
+    }
+    .advantage_row .advantage_item:nth-child(2) .advantage_image {
+        top: -108px;
+    }
+    .advantage_row .advantage_item:nth-child(3) .advantage_image {
+        top: -115px;
+    }
+    .for_border .advantage_item{
+        padding: 25px 24px 25px 30px;
+    }
+    .advantage_row .advantage_item:nth-child(3){
+        margin: 0;
+    }
+    .advantage_row .advantage_item:nth-child(2){
+        text-align: right;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 100% !important;
+    }
+    .advantage_row .advantage_item:nth-child(2) .advantage_title,
+    .advantage_row .advantage_item:nth-child(2) .description{
+        max-width: 60%;
+    }
+    .advantage_row .advantage_item:nth-child(2) .advantage_image{
+        left: unset;
+        right: 0;
+    }
+    .advantage_row2{
+        flex-direction: column-reverse;
+        gap: 90px;
+    }
+    .advantage_row2 .advantage_item:not(.for_border .advantage_item){
+        width: 100%;
+        max-width: 100%;
+    }
+    .advantage_row{
+        margin: 150px 0 100px 0;
+        gap: 90px;
+    }
+    .advantage_title:not(.advantage_row2 .advantage_title){
+        width: 54%;
+    }
+    .etaps_row {
+        margin: 80px 0;
+    }
+    .etaps_col {
+        gap: 70px;
+    }
+    .about .section_top, .advantage_row2, .diagram {
+        margin: 0 0 80px 0;
+    }
+    .advantage_title {
+        font-size: 20px;
+    }
+    .protein .description:first-child {
+        top: -16px;
+    }
+    .protein .description:nth-child(2) {
+        top: -16px;
+    }
+    .protein .description:nth-child(3) {
+        bottom: 78px;
+    }
+    .protein .description:nth-child(4) {
+        bottom: 78px;
     }
 }
 
@@ -2974,6 +3470,199 @@ body:has(.modal_open) .modal_back{
     .photo_image .image_title,
     .photo_image p{
         font-size: 12px;
+    }
+    .section_title2 {
+        font-size: 26px;
+        margin: 0 0 12px 0;
+    }
+    .description{
+        font-size: 12px;
+        line-height: 115%;
+    }
+    .main_link {
+        font-size: 12px;
+        line-height: 14.4px;
+        width: 129px;
+        height: 29px;
+        padding: 7px;
+    }
+    .hero .cont {
+        padding-top: 217px;
+        padding-bottom: 54px;
+    }
+    .hero_block {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        gap: 18px;
+        padding: 0 0 54px 0;
+    }
+    .hero_title {
+        font-size: 32px;
+        width: 100%;
+        word-break: break-word;
+        padding: 0;
+    }
+
+    .block_title {
+        font-size: 12px;
+        line-height: 135%;
+    }
+    .about .section_top {
+        margin: 0 0 50px 0;
+    }
+
+    .faq_block .faq_item{
+        font-size: 12px;
+        padding: 0 14px;
+    }
+    .faq_block .faq_top {
+        padding: 20px 0;
+    }
+    .faq_block .faq_body{
+        line-height: normal;
+    }
+    .faq_block .faq_body.open{
+        margin: 0 0 14px 0;
+        line-height: normal;
+    }
+    /*  */
+    .about{
+        padding: 40px 0 60px 0;
+        border-radius: 25px;
+    }
+    .about .section_top{
+        margin: 0 0 50px 0;
+    }
+    .advantage_title {
+        font-size: 12px;
+        margin: 0 0 5px 0;
+    }
+    .advantage_image2{
+        margin: 10px 0 0 0;
+    }
+    .advantage_image{
+        max-width: 87px;
+        max-height: 87px;
+        top: -55px;
+    }
+    .advantage_row .advantage_item:nth-child(2) .advantage_image {
+        top: -58px;
+    }
+    .advantage_row .advantage_item:nth-child(3) .advantage_image {
+        top: -70px;
+    }
+    .advantage_item .description:not(.for_border .description) {
+        width: 84%;
+    }
+    .for_border .advantage_item .description{
+        line-height: 115%;
+    }
+    .advantage_row {
+        margin: 90px 0 70px 0;
+        gap: 70px;
+    }
+    .advantage_row .advantage_item:nth-child(2) .advantage_title, .advantage_row .advantage_item:nth-child(2) .description {
+        max-width: 66%;
+    }
+    .about .for_border{
+        border-radius: 25px;
+    }
+    .about .for_border .advantage_item{
+        border-radius: 23px;
+        padding: 17px 23px;
+    }
+    .advantage_row2{
+        gap: 40px;
+    }
+    .advantage_row2, .diagram {
+        margin: 0 0 50px 0;
+    }
+    .protein {
+        margin: 50px 0;
+    }
+    .diagram_texts{
+        margin: 30px 0 10px 0;
+        gap: 19px;
+    }
+    .diagram_texts .description {
+        width: 26.3%;
+    }
+    .diagram img {
+        width: 110%;
+        left: -5%;
+        position: relative;
+    }
+    .etaps_row {
+        margin: 10px 0 0 0;
+    }
+    .mobile_none{
+        display: none;
+    }
+    .desctop_none{
+        display: block;
+    }
+    .etap_item{
+        gap: 5px;
+    }
+    .etap_item img{
+        width: 29px;
+        height: 26px;
+    }
+    .etap_item .description{
+        line-height: 135%;
+    }
+    .etaps_col {
+        gap: 50px;
+    }
+    .description svg{
+        width: 5px;
+        height: 11px;
+    }
+    .faq_section .section_title2{
+        display: none;
+    }
+    .faq_block{
+        border-width: 1px;
+        border-radius: 25px;
+    }
+    .faq_block .faq_item{
+        border-width: 1px;
+    }
+    .faq_arr_down img{
+        height: 4px;
+        width: 7px;
+    }
+    .faq_block .faq_title{
+        line-height: 100%;
+    }
+    .mobile_none2{
+        display: none;
+    }
+    .remined_text img{
+        width: 17px;
+        height: 17px;
+    }
+    .protein .description{
+        max-width: 106px;
+    }
+    .protein .description:first-child {
+        top: -25px;
+    }
+    .protein .description:nth-child(2) {
+        top: -25px;
+    }
+    .protein .description:nth-child(3) {
+        bottom: 59px;
+    }
+    .protein .description:nth-child(4) {
+        bottom: 57px;
+    }
+    .protein::before{
+        top: -15%;
+    }
+    .etap_item:nth-child(2) .description {
+        max-width: 100%;
     }
 }
 
