@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/font/stylesheet.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="cont">
+                <div class="header_block">
+                    <a href="#" class="header_logo">
+                        <img src="assets/img/icons/logo.svg" alt="">
+                    </a>
+                    <div class="header_navs">
+                        <a href="#" class="header_nav">Главная</a>
+                        <a href="#" class="header_nav">продукция</a>
+                        <a href="#" class="header_nav">О cosmopet</a>
+                        <a href="#" class="header_nav">Блог</a>
+                        <a href="#" class="header_link" id="auth"><img src="assets/img/icons/i-user.svg" alt=""></a>
+                        <a href="#" class="header_link"><img src="assets/img/icons/i-card.svg" alt=""></a>
+                    </div>
+                    <button class="header_bars"><img src="assets/img/icons/bars2.svg" alt=""></button>
+                </div>
+            </div>
+            <div class="header_mob">
+                <button class="header_close"><img src="assets/img/icons/i-close.svg" alt=""></button>
+                <div class="header_navs">
+                    <a href="#" class="header_nav">Главная</a>
+                    <a href="#" class="header_nav">продукция</a>
+                    <a href="#" class="header_nav">О cosmopet</a>
+                    <a href="#" class="header_nav">Блог</a>
+                    <div class="header_links">
+                        <a href="#" class="header_link" id="auth"><img src="assets/img/icons/i-user.svg" alt=""></a>
+                        <a href="#" class="header_link"><img src="assets/img/icons/i-card.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="header_mob-bg"></div>
+        </header>
+        <section class="pets pets_form">
+            <form class="cont" method="post">
+                <a href="#" class="back_link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="15" viewBox="0 0 10 15" fill="none">
+                        <path d="M9 1L2 7.5L9 14" stroke="#121212" stroke-width="2"/>
+                    </svg>
+                    вернуться
+                </a>
+                <div class="section_title d-flex align-items-center justify-content-between">
+                    <h1>питомцы</h1>
+                    <a href="#" class="back_link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
+                            <circle cx="14.5" cy="14.5" r="14" transform="rotate(-180 14.5 14.5)" stroke="#121212"/>
+                            <path d="M17.1133 22.8965L8.78499 14.7387L17.1133 6.58082" stroke="#121212"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="data_block">
+                    <div class="data_block_top">
+                        <div class="data_animal">
+                            <label class="pet_photo">
+                                <input type="file">
+                                <img src="assets/img/icons/i-user_photo.svg" alt="">
+                                <img src="assets/img/animal_image.png" alt="" class="preview">
+                            </label>
+                            <div>
+                                <div class="data_block_title">Данные питомца</div>
+                                <p class="date_block_desc">Загрузить изображение</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="data_block_body">
+                        <div class="pet_inputs">
+                            <div class="form_group">
+                                <div class="input_name">кличка</div>
+                                <div class="input_wrap">
+                                    <input type="text" placeholder="Кличка">
+                                </div>
+                            </div>
+                            <div class="form_group">
+                                <div class="input_name">Дата рождения</div>
+                                <div class="input_wrap">
+                                    <input type="date" placeholder="DD.MM.YY">
+                                </div>
+                            </div>
+                            <div class="form_group">
+                                <div class="input_name">Особые потребности</div>
+                                <div class="input_wrap">
+                                    <div class="collapse_input">
+                                        <label>
+                                            <input type="text">
+                                            <div class="plus">
+                                                <img src="assets/img/icons/i-plus.svg" alt="">
+                                            </div>
+                                            <p>Добавить</p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form_group">
+                                <div class="input_name">Активность</div>
+                                <div class="input_wrap">
+                                    <div class="collapse_input">
+                                        <label>
+                                            <div class="checkmark"></div>
+                                            <input type="radio" name="radio1">
+                                            <p>Низкая</p>
+                                        </label>
+                                        <label>
+                                            <div class="checkmark"></div>
+                                            <input type="radio" name="radio1">
+                                            <p>Высокая</p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form_group">
+                                <div class="input_name">Стери&shyлизация</div>
+                                <div class="input_wrap">
+                                    <div class="collapse_input">
+                                        <label>
+                                            <div class="checkmark"></div>
+                                            <input type="radio" name="radio2">
+                                            <p>Да</p>
+                                        </label>
+                                        <label>
+                                            <div class="checkmark"></div>
+                                            <input type="radio" name="radio2">
+                                            <p>Нет</p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form_group">
+                                <div class="input_name">Пол</div>
+                                <div class="input_wrap">
+                                    <div class="collapse_input">
+                                        <label>
+                                            <div class="checkmark"></div>
+                                            <input type="radio" name="radio3">
+                                            <p>Самка</p>
+                                        </label>
+                                        <label>
+                                            <div class="checkmark"></div>
+                                            <input type="radio" name="radio3">
+                                            <p>Самец</p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form_group">
+                                <div class="input_name">Порода собаки</div>
+                                <div class="input_wrap">
+                                    <div class="collapse_input">
+                                        <label>
+                                            <datalist id="suggestion-list">
+                                                <option value="Американский булли">
+                                                <option value="Акита-ину">
+                                                <option value="Американская акита">
+                                                <option value="Аляскинский маламут">
+                                                <option value="Алабай">
+                                                <option value="Аргентинский дог">
+                                                <option value="Арьежская гончая">
+                                                <option value="Алапахский бульдог">
+                                                <option value="Австралийский келпи">
+                                                <option value="Австралийская пастушья собака">
+                                                <option value="Американский мастиф">
+                                                <option value="Австрийский пинчер">
+                                                <option value="Американская эскимосская собака">
+                                                <option value="Алано">
+                                                <option value="Альпийская таксообразная гончая">
+                                                <option value="Английский той-терьер">
+                                                <option value="Аппенцеллер зенненхунд">
+                                                <option value="Английский сеттер">
+                                                <option value="Аффенпинчер">
+                                                <option value="Англо-французская малая гончая">
+                                                <option value="Аиди">
+                                                <option value="Английский пойнтер">
+                                                <option value="Австралийский терьер">
+                                                <option value="Австрийская гончая">
+                                                <option value="Австралийский шелковистый терьер">
+                                                <option value="Афганская борзая">
+                                                <option value="Азавак">
+                                                <option value="Артуазская гончая">
+                                                <option value="Английский спрингер-спаниель">
+                                                <option value="Американский питбультерьер">
+                                                <option value="Английская овчарка">
+                                                <option value="Американский бандог">
+                                                <option value="Английский мастиф">
+                                                <option value="Артезиано-нормандский бассет">
+                                                <option value="Американский бульдог">
+                                                <option value="Австралийская овчарка (Аусси)">
+                                                <option value="Американский голый терьер">
+                                                <option value="Английская енотовая гончая">
+                                                <option value="Американский фоксхаунд">
+                                                <option value="Африканис">
+                                                <option value="Английский фоксхаунд">
+                                                <option value="Аляскинский кли-кай">
+                                                <option value="Американский водяной спаниель">
+                                                <option value="Английский кокер-спаниель">
+                                                <option value="Английский бульдог">
+                                                <option value="Американский кокер-спаниель">
+                                                <option value="Американский стаффордширский терьер">
+                                                <option value="Бультерьер">
+                                                <option value="Бернский зенненхунд">
+                                                <option value="Бордер-терьер">
+                                                <option value="Бульмастиф">
+                                                <option value="Бурбуль">
+                                                <option value="Басенджи">
+                                                <option value="Бобтейл">
+                                                <option value="Бордер-колли">
+                                                <option value="Боксер">
+                                                <option value="Бигль">
+                                                <option value="Босерон">
+                                                <option value="Бордоский дог">
+                                                <option value="Бостон-терьер">
+                                                <option value="Бриар">
+                                                <option value="Брюссельский гриффон">
+                                                <option value="Бладхаунд">
+                                                <option value="Буковинская овчарка">
+                                                <option value="Бишон фризе">
+                                                <option value="Бурбонский бракк">
+                                                <option value="Бернская гончая">
+                                                <option value="Бразильский терьер">
+                                                <option value="Баскская овчарка">
+                                                <option value="Бульдог кампейро">
+                                                <option value="Большой мюнстерлендер">
+                                                <option value="Болгарский барак">
+                                                <option value="Бразильский фила">
+                                                <option value="Бакхмуль">
+                                                <option value="Бурят-монгольский волкодав">
+                                                <option value="Большой швейцарский зенненхунд">
+                                                <option value="Бергамская овчарка">
+                                                <option value="Брохольмер">
+                                                <option value="Бульдог Катахулы">
+                                                <option value="Бородатый колли">
+                                                <option value="Бедлингтон-терьер">
+                                                <option value="Бельгийская овчарка">
+                                                <option value="Бретонский эпаньоль">
+                                                <option value="Баварская горная гончая">
+                                                <option value="Белая швейцарская овчарка">
+                                                <option value="Бассет-хаунд">
+                                                <option value="Барбет">
+                                                <option value="Восточносибирская лайка">
+                                                <option value="Веймаранер">
+                                                <option value="Восточноевропейская овчарка">
+                                                <option value="Вельш-корги кардиган">
+                                                <option value="Вельштерьер">
+                                                <option value="Вест-хайленд-уайт-терьер">
+                                                <option value="Венгерская жесткошёрстная выжла">
+                                                <option value="Волчья собака Сарлоса">
+                                                <option value="Вольпино итальяно">
+                                                <option value="Вельш-спрингер-спаниель">
+                                                <option value="Валенсийский ратер">
+                                                <option value="Венгерская борзая">
+                                                <option value="Вельш-корги пемброк">
+                                                <option value="Веттерхун">
+                                                <option value="Вандейский бассет-гриффон">
+                                                <option value="Венгерская выжла">
+                                                <option value="Гампр">
+                                                <option value="Грейхаунд">
+                                                <option value="Гончая Гамильтона">
+                                                <option value="Грюнендаль">
+                                                <option value="Голландская овчарка">
+                                                <option value="Гаванский бишон">
+                                                <option value="Гладкошерстный фокстерьер">
+                                                <option value="Гренландская собака">
+                                                <option value="Гончая Шиллера">
+                                                <option value="Глен оф Имаал терьер">
+                                                <option value="Голубой гасконский бассет">
+                                                <option value="Греческая овчарка">
+                                                <option value="Денди-динмонт-терьер">
+                                                <option value="Далматинец">
+                                                <option value="Доберман">
+                                                <option value="Древер">
+                                                <option value="Дратхаар">
+                                                <option value="Дземон-сиба">
+                                                <option value="Дункер">
+                                                <option value="Дирхаунд">
+                                                <option value="Джек-рассел-терьер">
+                                                <option value="Длинношерстный колли">
+                                                <option value="Евразиер">
+                                                <option value="Жесткошёрстный фокстерьер">
+                                                <option value="Золотистый ретривер (Лабрадор)">
+                                                <option value="Западно-сибирская лайка">
+                                                <option value="Ирландский водяной спаниель">
+                                                <option value="Испанская водяная собака">
+                                                <option value="Испанский мастиф">
+                                                <option value="Ирландский сеттер">
+                                                <option value="Итальянский спиноне">
+                                                <option value="Ирландский волкодав">
+                                                <option value="Ирландский мягкошёрстный пшеничный терьер">
+                                                <option value="Итальянский бракк">
+                                                <option value="Исландская собака">
+                                                <option value="Ирландский терьер">
+                                                <option value="Испанская гончая">
+                                                <option value="Испанский гальго">
+                                                <option value="Йоркширский терьер">
+                                                <option value="Курцхаар">
+                                                <option value="Кане-корсо">
+                                                <option value="Китайская хохлатая собака">
+                                                <option value="Кавказская овчарка">
+                                                <option value="Ка-де-бо">
+                                                <option value="Короткошёрстный колли">
+                                                <option value="Карликовый пинчер">
+                                                <option value="Кавалер-кинг-чарльз-спаниель">
+                                                <option value="Каи">
+                                                <option value="Ксолоитцкуинтли">
+                                                <option value="Канарский дог">
+                                                <option value="Карело-финская лайка">
+                                                <option value="Крашская овчарка">
+                                                <option value="Керн-терьер">
+                                                <option value="Куньминская овчарка">
+                                                <option value="Котон-де-тулеар">
+                                                <option value="Континентальный той-спаниель">
+                                                <option value="Корейский чиндо">
+                                                <option value="Комондор">
+                                                <option value="Кангал (анатолийская овчарка)">
+                                                <option value="Курчавошёрстный ретривер">
+                                                <option value="Кромфорлендер">
+                                                <option value="Керри-блю-терьер">
+                                                <option value="Кеесхонд">
+                                                <option value="Лабрадор-ретривер">
+                                                <option value="Левретка">
+                                                <option value="Лабрадудль">
+                                                <option value="Леонбергер">
+                                                <option value="Леопардовая собака Катахулы">
+                                                <option value="Ланкаширский хилер">
+                                                <option value="Лангхаар">
+                                                <option value="Лаготто-романьоло">
+                                                <option value="Ландсир">
+                                                <option value="Лейкленд-терьер">
+                                                <option value="Лхаса апсо">
+                                                <option value="Мальтийская болонка">
+                                                <option value="Мальтипу">
+                                                <option value="Малая бельгийская собака">
+                                                <option value="Муди">
+                                                <option value="Манчестер-терьер">
+                                                <option value="Метис">
+                                                <option value="Московская сторожевая собака">
+                                                <option value="Миттельшнауцер">
+                                                <option value="Майоркская овчарка">
+                                                <option value="Малая швейцарская гончая">
+                                                <option value="Малая львиная собака">
+                                                <option value="Мягкошёрстный уиппет">
+                                                <option value="Московская сторожевая">
+                                                <option value="Московский водолаз">
+                                                <option value="Мелитезе">
+                                                <option value="Немецкая овчарка">
+                                                <option value="Ньюфаундленд">
+                                                <option value="Немецкий шпиц">
+                                                <option value="Немецкий дратхаар">
+                                                <option value="Норфолк-терьер">
+                                            </datalist>
+                                            <input type="text" list="suggestion-list">
+                                            <div class="plus">
+                                                <img src="assets/img/icons/i-plus.svg" alt="">
+                                            </div>
+                                            <p>Добавить</p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form_group">
+                                <div class="input_name">Вес</div>
+                                <div class="input_wrap">
+                                    <div class="counter">
+                                        <span class="minus">
+                                            <img src="assets/img/icons/i-minus.svg" alt="">
+                                        </span>
+                                        <input type="number" value="1" min="1" max="100">
+                                        <span class="plus">
+                                            <img src="assets/img/icons/i-plus.svg" alt="">
+                                        </span>
+                                        кг
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-end">
+                    <button class="main_btn main_btn_white">Сохранить</button>
+                </div>
+
+            </form>
+            <img src="assets/img/pets_before.png" alt="" class="pets_before">
+            <img src="assets/img/pets_before_mob.png" alt="" class="pets_before pets_before_mob">
+        </section>
+        <footer class="footer">
+            <div class="cont">
+                <div class="footer_block">
+                    <div class="footer_menu">
+                        <a href="#" class="footer_logo"><img src="assets/img/icons/logo.svg" alt=""></a>
+                        <div class="footer_navs">
+                            <a href="#" class="footer_nav">Главная</a>
+                            <a href="#" class="footer_nav">продукция</a>
+                            <a href="#" class="footer_nav">О cosmopet</a>
+                            <a href="#" class="footer_nav">Блог</a>
+                            <a href="#" class="footer_link"><img src="assets/img/icons/i-user.svg" alt=""></a>
+                            <a href="#" class="footer_link"><img src="assets/img/icons/i-card.svg" alt=""></a>
+                        </div>
+                    </div>
+
+                    <div class="footer_box">
+                        <h2 class="footer_box-title">Отзывы и предложения <img src="assets/img/icons/footer_line-mob.svg" alt="" class="footer_line-mob1"></h2>
+                        <img src="assets/img/icons/footer_line.svg" alt="" class="footer_box-line1">
+                        <a href="#" class="footer_box-link">pro@cosmopet.shop</a>
+                    </div>
+                    <div class="footer_box">
+                        <h2 class="footer_box-title">связь с ветеринаром <img src="assets/img/icons/footer_line-mob2.svg" alt="" class="footer_line-mob2"></h2>
+                        <img src="assets/img/icons/footer_line.svg" alt="" class="footer_box-line2">
+                        <a href="#" class="footer_box-link">vetvopros@cosmopet.shop</a>
+                    </div>
+                    <div class="footer_form">
+                        <div class="footer_form-info">
+                            <div class="footer_form-title">
+                                <h2>Обратная связь</h2>
+                                <img src="assets/img/icons/footer_line.svg" alt="">
+                            </div>
+                            <div class="footer_form-inp">
+                                <input type="text" placeholder="ваше имя">
+                                <input type="email" placeholder="почта">
+                            </div>
+                        </div>
+                        <div class="footer_form-textarea">
+                            <textarea placeholder="обращение"></textarea>
+                            <button class="footer_form-btn btn--black-hover">отправить</button>
+                        </div>
+                    </div>
+
+                    <div class="footer_social">
+                        <a href="#" class="footer_social-link"><img src="assets/img/icons/i-vk.svg" alt=""></a>
+                        <a href="#" class="footer_social-link"><img src="assets/img/icons/i-tg.svg" alt=""></a>
+                        <a href="#" class="footer_social-link"><img src="assets/img/icons/i-yandex.svg" alt=""></a>
+                    </div>
+
+                    <div class="footer_bottom">
+                        <a href="#">123182 г. Москва, 4-й Красногорский пр., д. 2/4, стр. 1, этаж/ком. 3/1</a>
+                        <a href="#">Соглашение о конфиденциальности</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="modal auth_modal auth1">
+            <span class="plus plus_black">
+                <img src="assets/img/icons/i-plus.svg" alt="">
+            </span>
+            <div class="d-flex flex-column align-items-center gap-15">
+                <a href="#" class="main_btn login_btn">Вход</a>
+                <a href="#" class="main_btn register_btn">Регистрация</a>
+            </div>
+        </div>
+        <form class="modal auth_modal auth2">
+            <div class="modal_top">
+                <a href="#" class="back_btn">
+                    <img src="assets/img/icons/i-back.svg" alt="">
+                </a>
+                <div class="modal_title">Регистрация</div>
+                <span class="plus plus_black">
+                    <img src="assets/img/icons/i-plus.svg" alt="">
+                </span>
+            </div>
+            <div class="modal_inputs">
+                <label>
+                    <input type="text" class="input" placeholder="Имя">
+                    <p>error</p>
+                </label>
+                <label>
+                    <input type="tel" class="input" placeholder="Телефон">
+                    <p>error</p>
+                </label>
+                <label>
+                    <input type="email" class="input" placeholder="Email">
+                    <p>error</p>
+                </label>
+                <label>
+                    <input type="password" class="input error" placeholder="Пароль">
+                    <p>Пароль не должен содержать знаков !”№@#-</p>
+                </label>
+                <label>
+                    <div class="checkmark"></div>
+                    <input type="checkbox">
+                    <p class="opacity_txt">Согласие на получение рекламных предложений</p>
+                </label>
+                <button class="main_btn">Регистрация</button>
+                <p class="conditions">Нажимая на кнопку регистрации вы даёте согласие на обработку персональных данных</p>
+            </div>
+        </form>
+        <form class="modal auth_modal auth3">
+            <div class="modal_top">
+                <a href="#" class="back_btn">
+                    <img src="assets/img/icons/i-back.svg" alt="">
+                </a>
+                <div class="modal_title">Регистрация</div>
+                <span class="plus plus_black">
+                    <img src="assets/img/icons/i-plus.svg" alt="">
+                </span>
+            </div>
+            <div class="modal_inputs">
+                <label>
+                    <input type="password" class="input" placeholder="Код">
+                    <p>Пароль не должен содержать знаков !”№@#-</p>
+                </label>
+                <p class="conditions">Нажимая на кнопку регистрации вы даёте согласие на обработку персональных данных</p>
+                <button class="main_btn">Регистрация</button>
+            </div>
+        </form>
+        <form class="modal auth_modal auth4">
+            <div class="modal_top">
+                <a href="#" class="back_btn">
+                    <img src="assets/img/icons/i-back.svg" alt="">
+                </a>
+                <div class="modal_title">Вход</div>
+                <span class="plus plus_black">
+                    <img src="assets/img/icons/i-plus.svg" alt="">
+                </span>
+            </div>
+            <div class="modal_inputs">
+                <label>
+                    <input type="text" class="input" placeholder="Телефон или Email">
+                    <p>error</p>
+                </label>
+                <label>
+                    <input type="password" class="input" placeholder="Код">
+                    <p>Пароль не должен содержать знаков !”№@#-</p>
+                </label>
+                <a href="#" class="conditions">Забыли пароль? </a>
+                <button class="main_btn">Вход</button>
+            </div>
+        </form>
+        <form class="modal auth_modal auth5">
+            <div class="modal_top">
+                <a href="#" class="back_btn">
+                    <img src="assets/img/icons/i-back.svg" alt="">
+                </a>
+                <div class="modal_title">Вход</div>
+                <span class="plus plus_black">
+                    <img src="assets/img/icons/i-plus.svg" alt="">
+                </span>
+            </div>
+            <div class="modal_inputs">
+                <label>
+                    <input type="password" class="input" placeholder="Код">
+                    <p>Пароль не должен содержать знаков !”№@#-</p>
+                </label>
+                <p class="conditions">Нажимая на кнопку регистрации вы даёте согласие на обработку персональных данных</p>
+                <button class="main_btn">Вход</button>
+            </div>
+        </form>
+        <div class="modal_back"></div>
+    </div>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
